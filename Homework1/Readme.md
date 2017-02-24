@@ -34,6 +34,10 @@ y(x)=e^0.5x*sin⁡5x
 Another way to find a solution for this ODE is to do Change of variables.
 If we define a µ(x)= e^(-x)   and take integral we will reach the same solution.
 
+We were able to find a exact solution for this ODE, but sometimes it is very hard to find axact solution. Alternatively, math scientists inttroduces approxiame methods which try to find a solution with numerical ways but the problem is that the solution would not be exact. accurancy of these method was always part of scientific discussions. 
+
+Here we run a solution with four different method to compare them and see the accurancy of them. For methods are exact solution, Euler method, Midpoint method and RK4.
+
 
 
 
