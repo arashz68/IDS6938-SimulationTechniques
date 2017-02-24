@@ -14,11 +14,11 @@ Arash Zarmehr (*)
 Part One 
 The following ODE can be solved easily with Laplace method. Laplace method is the easy way to reach exact solution of some ODEs.
 
-dy/dx=y-(1/2)*e^(x/2)*sin⁡(5x)+5e^(x/2)*cos⁡〖(5x)〗 
+dy/dx=y-(1/2)*e^(x/2)*sin⁡(5x)+5e^(x/2)*cos⁡(5x)
 
 Solution:
 ℒ 
-S*Y-Y(0)=Y-0.5*(5/((S-0.5)^2+25))+5*((S-0.5)/(〖((S-0.5)〗^2+25))
+S*Y-Y(0)=Y-0.5*(5/((S-0.5)^2+25))+5*((S-0.5)/(((S-0.5)^2+25))
 
 Y*(S-1)=Y(0)+5*((S-0.5)/((S-0.5)^2+25)-0.5/((S-0.5)^2+25))
 
