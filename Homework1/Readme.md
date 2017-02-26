@@ -78,5 +78,5 @@ figure 3
 
 | undeformed jello  | deformed jello |
 | ------------- | ------------- |
-| ![](images/undeformed3.png?raw=true)  | ![](images/deformed3.png?raw=true) |
+| ![](IDS6938-SimulationTechniques/Homework1/images/3.png?raw=true)  | ![](images/deformed3.png?raw=true) |
 
