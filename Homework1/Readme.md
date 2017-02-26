@@ -46,11 +46,11 @@ Table below shows the data for Euler, Midpoint, RK4 and exact solution with erro
 
 figure 1 shows the differences between three solution method and excct solution. the picture shows RK4 has a bettter result than other solutions and the result is more closer to the exact solution comparing to the others. 
 
-![](images/1.png
+![](IDS6938-SimulationTechniques/Homework1/images/1.png
 
 Figure 2 will compare different solutions error in one graph to show the accurancy of them.
 
-![](images/2.png
+![](IDS6938-SimulationTechniques/Homework1/images/2.png
 
 This graph is proof of better accurancy for RK4 comparing to other solutions.
 
@@ -62,7 +62,7 @@ First of all, let's choose h=0.2 (multiple of last timme). Figure 3 will show th
 
 
 
-![](images/3.png
+![](IDS6938-SimulationTechniques/Homework1/images/3.png
 figure 3 
 
 
