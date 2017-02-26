@@ -63,7 +63,6 @@ First of all, let's choose h=0.2 (multiple of last timme). Figure 3 will show th
 
 
 ![](images/3.png
-
 figure 3 
 
 
