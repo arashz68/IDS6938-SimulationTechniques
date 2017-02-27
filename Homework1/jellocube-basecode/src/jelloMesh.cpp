@@ -3,16 +3,16 @@
 #include <algorithm>
 
 // TODO
-double JelloMesh::g_structuralKs = 0.0; 
-double JelloMesh::g_structuralKd = 0.0; 
-double JelloMesh::g_attachmentKs = 0.0;
-double JelloMesh::g_attachmentKd = 0.0;
-double JelloMesh::g_shearKs = 0.0;
-double JelloMesh::g_shearKd = 0.0;
-double JelloMesh::g_bendKs = 0.0;
-double JelloMesh::g_bendKd = 0.0;
-double JelloMesh::g_penaltyKs = 0.0;
-double JelloMesh::g_penaltyKd = 0.0;
+double JelloMesh::g_structuralKs = 2000.0; 
+double JelloMesh::g_structuralKd = 25.0; 
+double JelloMesh::g_attachmentKs = 2000.0;
+double JelloMesh::g_attachmentKd = 25.0;
+double JelloMesh::g_shearKs = 2000.0;
+double JelloMesh::g_shearKd = 25.50;
+double JelloMesh::g_bendKs = 2500.0;
+double JelloMesh::g_bendKd = 25.0;
+double JelloMesh::g_penaltyKs = 3200.0;
+double JelloMesh::g_penaltyKd = 25.0;
 
 JelloMesh::JelloMesh() :     
     m_integrationType(JelloMesh::RK4), m_drawflags(MESH | STRUCTURAL),
@@ -463,9 +463,9 @@ void JelloMesh::ResolveContacts(ParticleGrid& grid)
 		// TODO
 		p.force = -p.force;
 		p.velocity = -p.velocity;
-		p.position = p.position - (contact.m_distance*normal);
-		p.force = (-p.force + contact.m_distance*normal);
-		p.velocity = p.velocity - (2 * (p.velocity*normal))*(normal);
+		//p.position = p.position - (contact.m_distance*normal);
+		//p.force = (-p.force + contact.m_distance*normal);
+		//p.velocity = p.velocity - (2 * (p.velocity*normal))*(normal);
 	}
 }
 
@@ -486,24 +486,32 @@ void JelloMesh::ResolveCollisions(ParticleGrid& grid)
 }
 
 bool JelloMesh::FloorIntersection(Particle& p, Intersection& intersection)
+
 {
-	if (p.position.n[1] <= 0.0)
-	{
-		intersection.m_p = p.index;
-		intersection.m_distance = -p.position[1];
-		intersection.m_type = CONTACT;
-		intersection.m_normal = vec3(0.0, 1.0, 0.0);
+	if (p.position.n[1] <= 0.2) {
+		intersection = Intersection(JelloMesh::IntersectionType::COLLISION, p.index, vec3(0, 1, 0));
 		return true;
 	}
-	else if (p.position.n[1] >= 0.0 & p.position.n[1] <= 0.10)
-	{
-		intersection.m_p = p.index;
-		intersection.m_distance = 0.05 - p.position[1];
-		intersection.m_type = COLLISION;
-		intersection.m_normal = vec3(0.0, 1.0, 0.0);
-		return true;
-	}
+
+	return false;
 }
+//{
+	//if (p.position.n[1] <= 0.0) {
+		//intersection.m_p = p.index;
+		//intersection.m_distance = -p.position[1];
+		//intersection.m_type = CONTACT;
+		//intersection.m_normal = vec3(0.0, 1.0, 0.0);
+		//return true;
+	//}
+	//else if (p.position.n[1] >= 0.0 & p.position.n[1] <= 0.05)
+	//{
+		//intersection.m_p = p.index;
+		//intersection.m_distance = 0.05 - p.position[1];
+		//intersection.m_type = COLLISION;
+		//intersection.m_normal = vec3(0.0, 1.0, 0.0);
+		//return true;
+	//}
+
 
 
 bool JelloMesh::CylinderIntersection(Particle& p, World::Cylinder* cylinder,JelloMesh::Intersection& result)

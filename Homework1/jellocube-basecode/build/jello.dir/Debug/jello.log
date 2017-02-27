@@ -1,4 +1,3 @@
 ﻿  jelloMesh.cpp
 C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework1\jellocube-basecode\src\jelloMesh.cpp(254): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-c:\users\zamehr\desktop\clone\ids6938-simulationtechniques\homework1\jellocube-basecode\src\jellomesh.cpp(506): warning C4715: 'JelloMesh::FloorIntersection': not all control paths return a value
   jello.vcxproj -> C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework1\jellocube-basecode\build\Debug\jello.exe
