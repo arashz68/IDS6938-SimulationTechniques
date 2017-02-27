@@ -486,14 +486,23 @@ void JelloMesh::ResolveCollisions(ParticleGrid& grid)
 }
 
 bool JelloMesh::FloorIntersection(Particle& p, Intersection& intersection)
-
 {
-	if (p.position.n[1] <= 0) {
-		intersection = Intersection(JelloMesh::IntersectionType::COLLISION, p.index, vec3(0, 1, 0));
+	if (p.position.n[1] <= 0.0)
+	{
+		intersection.m_p = p.index;
+		intersection.m_distance = -p.position[1];
+		intersection.m_type = CONTACT;
+		intersection.m_normal = vec3(0.0, 1.0, 0.0);
 		return true;
 	}
-
-	return false;
+	else if (p.position.n[1] >= 0.0 & p.position.n[1] <= 0.10)
+	{
+		intersection.m_p = p.index;
+		intersection.m_distance = 0.05 - p.position[1];
+		intersection.m_type = COLLISION;
+		intersection.m_normal = vec3(0.0, 1.0, 0.0);
+		return true;
+	}
 }
 
 
