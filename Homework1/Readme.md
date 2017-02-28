@@ -172,7 +172,7 @@ Increaing in the steping size will decreasing accurancy. So, the most accurate m
 
 Table one shows the result value from different solution methods.
 
-[complete data result value](data.txt)
+[complete data result value](IDS6938-SimulationTechniques/Homework1/Part 1-Numerical Analysis - Copy/data.txt)
 
 
 
