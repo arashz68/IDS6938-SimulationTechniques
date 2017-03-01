@@ -172,6 +172,11 @@ Increaing in the steping size will decreasing accurancy. So, the most accurate m
 
 Table one shows the result value from different solution methods.
 
+@[](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework1\Part 1-Numerical Analysis - Copy/data.txt)
+
+
+
+
 | X  | RK1 | RK2 | RK4 |  EXACT |
 | ------------- | ------------- | ------------- | ------------- |------------- |
 | 0.1  | 0.2 | 0.3 | 0.4 | 0.4 |
