@@ -200,7 +200,37 @@ void JelloMesh::InitJelloMesh()
         }
     }
 
-    // Init mesh geometry
+	// Setup shear springs
+	//ParticleGrid& g = m_vparticles;
+	//for (int i = 0; i < m_rows + 1; i++)
+	//{
+		//for (int j = 0; j < m_cols + 1; j++)
+		//{
+			//for (int k = 0; k < m_stacks + 1; k++)
+			//{
+				//if (j < m_cols && i < m_rows) AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
+				//if (j > 0 && j < m_cols + 1 && i > 0 && i < m_rows + 1)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
+				//if (j < m_cols && k < m_stacks)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
+			//}
+		//}
+	//}
+					
+
+
+
+	// Setup bend springs
+	//ParticleGrid& g = m_vparticles;
+	//for (int i = 0; i < m_rows + 1; i++)
+	//{
+	   // for (int j = 0; j < m_cols + 1; j++) 
+		//{
+			//for (int k = 0; k < m_stacks + 1; k++)
+			//if (i < m_rows - 1) AddBendSpring(GetParticle(g, i, j, k),GetParticle(g, i + 2, j, k));
+    
+	
+
+
+// Init mesh geometry
     m_mesh.clear();
     m_mesh.push_back(FaceMesh(*this,XLEFT));
     m_mesh.push_back(FaceMesh(*this,XRIGHT));
