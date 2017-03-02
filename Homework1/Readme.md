@@ -339,12 +339,20 @@ Yes. Numerical analysis of integration (RK4).
    
    
    ***ARASH ZARMEHR***
+   
+   
    ***P.hD. Student of Mechanical Engineering***
+   
    *** Master of science student in Modeling and Simulation***
+   
    ***University of Central Florida***
+   
    ***Assignment 1, Simulation Techniques***
+   
    ***Instructor: Dr.Joseph T. Kider Jr.***
+   
    *** Spring 2017***
+  
   
 
 
