@@ -4,13 +4,13 @@
 
 // TODO
 double JelloMesh::g_structuralKs = 1000.0; 
-double JelloMesh::g_structuralKd = 25.0; 
+double JelloMesh::g_structuralKd = 2.0; 
 double JelloMesh::g_attachmentKs = 1000.0;
 double JelloMesh::g_attachmentKd = 25.0;
 double JelloMesh::g_shearKs = 1000.0;
 double JelloMesh::g_shearKd = 25.50;
 double JelloMesh::g_bendKs = 1500.0;
-double JelloMesh::g_bendKd = 25.0;
+double JelloMesh::g_bendKd = 10.0;
 double JelloMesh::g_penaltyKs = 1200.0;
 double JelloMesh::g_penaltyKd = 25.0;
 
@@ -201,31 +201,43 @@ void JelloMesh::InitJelloMesh()
     }
 
 	// Setup shear springs
-	//ParticleGrid& g = m_vparticles;
-	//for (int i = 0; i < m_rows + 1; i++)
-	//{
-		//for (int j = 0; j < m_cols + 1; j++)
-		//{
-			//for (int k = 0; k < m_stacks + 1; k++)
-			//{
-				//if (j < m_cols && i < m_rows) AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
-				//if (j > 0 && j < m_cols + 1 && i > 0 && i < m_rows + 1)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
-				//if (j < m_cols && k < m_stacks)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
-			//}
-		//}
-	//}
+	for (int i = 0; i < m_rows + 1; i++)
+	{
+		for (int j = 0; j < m_cols + 1; j++)
+		{
+			for (int k = 0; k < m_stacks + 1; k++)
+			{
+				if (j < m_cols && i < m_rows) AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i + 1, j + 1, k));
+				if (j > 0 && j < m_cols + 1 && i > 0 && i < m_rows + 1)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i -1, j - 1, k));
+				if (j < m_cols && k < m_stacks)AddShearSpring(GetParticle(g, i, j, k), GetParticle(g, i , j, k));
+				
+			}
+		}
+	}
 					
 
 
 
 	// Setup bend springs
-	//ParticleGrid& g = m_vparticles;
-	//for (int i = 0; i < m_rows + 1; i++)
-	//{
-	   // for (int j = 0; j < m_cols + 1; j++) 
-		//{
-			//for (int k = 0; k < m_stacks + 1; k++)
-			//if (i < m_rows - 1) AddBendSpring(GetParticle(g, i, j, k),GetParticle(g, i + 2, j, k));
+	for (int i = 0; i < m_rows + 1; i++)
+	{
+		for (int j = 0; j < m_cols + 1; j++)
+		{
+			for (int k = 0; k < m_stacks + 1; k++)
+			{
+				if (i < m_rows - 1) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i + 2, j, k));
+				if (j < m_cols - 1) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j+2, k));
+				if (k < m_stacks - 1) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j, k+2));
+				if (i < m_rows - 2) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i + 3, j, k));
+				if (j < m_cols - 2) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j + 3, k));
+				if (k < m_stacks - 2) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j, k + 3));
+				if (i < m_rows - 3) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i + 4, j, k));
+				if (j < m_cols - 3) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j + 4, k));
+				if (k < m_stacks - 3) AddBendSpring(GetParticle(g, i, j, k), GetParticle(g, i, j, k + 4));
+	                   
+			}
+		}
+	}
     
 	
 
