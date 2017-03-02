@@ -16,7 +16,7 @@ The assignment is due: Monday, February 27 at 11:59PM (EST)
 
 
 
-Arash Zarmehr (*)
+***Arash Zarmehr (*)***
 
 
 
@@ -265,6 +265,7 @@ figures below shows part of workspace sceershot for spring forces added, collisi
 
 
 
+<<<<<<< HEAD
 [Jello Cube Video 1](https://youtu.be/Ulvxq3mnjfk)
 
 
@@ -275,6 +276,18 @@ figures below shows part of workspace sceershot for spring forces added, collisi
 
 
 [Jello Cube Video 4](https://youtu.be/5KeqXNSrIM0)
+=======
+[Video Clip,Jello one](https://youtu.be/Ulvxq3mnjfk)
+
+
+[Video Clip,Jello two](https://youtu.be/B4lejkb_TE8)
+
+
+[Video Clip,Jello three](https://youtu.be/4f_UqBWVI2A)
+
+
+[Video Clip, Jello Four](https://youtu.be/5KeqXNSrIM0)
+>>>>>>> 3ed0560269a974601b0aa82a3136971263644231
 
 
 
