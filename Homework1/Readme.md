@@ -210,6 +210,7 @@ Table 2 will show result value for RK4 with different step sizes.
 
 
 Complete result value can be found at n=0.2rk4.txt, n=0.5rk4.txt and n=1.0rk4.txt
+
  [Complete Rerult Value for h=0.2RK4](n=0.2rk4.txt)
 
 
@@ -232,9 +233,11 @@ Figure 6 will compare the greater value of ks with smaller value. domain of grea
 
 
 Figure6 smaller ks
+
 ![](images/6.png)
 
 Figure7 greater ks
+
 ![](images/7.png)
 
 Kd is damping constant which it's responsibility in spring force is to absorb some of the energy and tend to decrease the velocity of the mass points attached to them. So damping depends on the velocity.
@@ -242,9 +245,11 @@ Kd is damping constant which it's responsibility in spring force is to absorb so
 Figure 8 and 9 will shows the effec of smaller and greater value of Kd on the spring force.
 
 Figure 8 smaller Kd
+
 ![](images/8.png)
 
 Figure9 greater Kd
+
 ![](images/9.png)
 
 
