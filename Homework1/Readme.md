@@ -306,6 +306,7 @@ the collision here shows the effects of spring forces on the jello cube and prac
 systems which countain a collision from another particle such az throwing out boxes from airplanes in order to complete rescue operations in no access locations. The facts which are important in this simulation would be such as forces boxes suffering in a time of ollision with the ground and how to avoid any damages to them.
 
 
+
 4- Dose the Jello behave realistically? What integration method did you choose to make the Jello stabel?
 
 Yes. Numerical analysis of integration (RK4).
@@ -318,6 +319,7 @@ Yes. Numerical analysis of integration (RK4).
    Second of all, model should be simulate pysically. Physics laws should be able to model it.
    
    In a nutshell, the model which is water in this case can be simulate.
+   
    
    
    
