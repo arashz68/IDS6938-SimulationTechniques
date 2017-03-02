@@ -24,7 +24,7 @@ Arash Zarmehr (*)
 
 
 
-**Part One 
+**Part One: Numerical Analysis of Integration Functions* ***
 
 The following ODE can be solved easily with Laplace method. Laplace method is the easy way to reach exact solution of some ODEs.
 
@@ -172,11 +172,9 @@ Increaing in the steping size will decreasing accurancy. So, the most accurate m
 
 Table one shows the five first result value from different solution methods and link below shows the complete result values for numbers between 0.0 to 10.0.
 
-<<<<<<< HEAD
-@[](data.txt)
-=======
-[complete data result value](data.txt)
->>>>>>> 26889e05636e62a5fc65779c6db339f21f895a53
+
+[complete data result value(data.txt)](data.txt)
+
 
 
 
@@ -198,105 +196,56 @@ Table 2 will show result value for RK4 with different step sizes.
 
 | X | RK4,0.2 | RK4,0.5 | RK4,1.0 |
 | ------------- | ------------- | ------------- | ------------- |
-| 0.1  | 0.2 | 0.3 | 0.4 |
-| 0.2  | 0.2 | 0.3 | 0.4 | 
-| 0.3  | 0.2 | 0.3 | 0.4 | 
-| 0.4  | 0.2 | 0.3 | 0.4 | 
-| 0.5  | 0.2 | 0.3 | 0.4 |
-| 0.6  | 0.2 | 0.3 | 0.4 | 
-| 0.7  | 0.2 | 0.3 | 0.4 | 
-| 0.8  | 0.2 | 0.3 | 0.4 | 
-| 0.9  | 0.2 | 0.3 | 0.4 |
-| 1.0  | 0.2 | 0.3 | 0.4 | 
-| 1.1  | 0.2 | 0.3 | 0.4 | 
-| 1.2  | 0.2 | 0.3 | 0.4 | 
-| 1.3  | 0.2 | 0.3 | 0.4 |
-| 1.4  | 0.2 | 0.3 | 0.4 | 
-| 1.5  | 0.2 | 0.3 | 0.4 | 
-| 1.6  | 0.2 | 0.3 | 0.4 | 
-| 1.7  | 0.2 | 0.3 | 0.4 |
-| 1.8  | 0.2 | 0.3 | 0.4 | 
-| 1.9  | 0.2 | 0.3 | 0.4 | 
-| 2.0  | 0.2 | 0.3 | 0.4 | 
-| 2.1  | 0.2 | 0.3 | 0.4 |
-| 2.2  | 0.2 | 0.3 | 0.4 | 
-| 2.3  | 0.2 | 0.3 | 0.4 | 
-| 2.4  | 0.2 | 0.3 | 0.4 | 
-| 2.5  | 0.2 | 0.3 | 0.4 |
-| 2.6  | 0.2 | 0.3 | 0.4 | 
-| 2.7  | 0.2 | 0.3 | 0.4 | 
-| 2.8  | 0.2 | 0.3 | 0.4 | 
-| 2.9  | 0.2 | 0.3 | 0.4 |
-| 3.0  | 0.2 | 0.3 | 0.4 | 
-| 3.1  | 0.2 | 0.3 | 0.4 | 
-| 3.2  | 0.2 | 0.3 | 0.4 | 
-| 3.3  | 0.2 | 0.3 | 0.4 |
-| 3.4  | 0.2 | 0.3 | 0.4 | 
-| 3.5  | 0.2 | 0.3 | 0.4 | 
-| 3.6  | 0.2 | 0.3 | 0.4 | 
-| 3.7  | 0.2 | 0.3 | 0.4 |
-| 3.8  | 0.2 | 0.3 | 0.4 | 
-| 3.9  | 0.2 | 0.3 | 0.4 | 
-| 4.0  | 0.2 | 0.3 | 0.4 | 
-| 4.1  | 0.2 | 0.3 | 0.4 |
-| 4.2  | 0.2 | 0.3 | 0.4 | 
-| 4.3  | 0.2 | 0.3 | 0.4 | 
-| 4.4  | 0.2 | 0.3 | 0.4 | 
-| 4.5  | 0.2 | 0.3 | 0.4 |
-| 4.6  | 0.2 | 0.3 | 0.4 | 
-| 4.7  | 0.2 | 0.3 | 0.4 | 
-| 4.8  | 0.2 | 0.3 | 0.4 | 
-| 4.9  | 0.2 | 0.3 | 0.4 |
-| 5.0  | 0.2 | 0.3 | 0.4 | 
-| 5.1  | 0.2 | 0.3 | 0.4 | 
-| 5.2  | 0.2 | 0.3 | 0.4 | 
-| 5.3  | 0.2 | 0.3 | 0.4 |
-| 5.4  | 0.2 | 0.3 | 0.4 | 
-| 5.5  | 0.2 | 0.3 | 0.4 | 
-| 5.6  | 0.2 | 0.3 | 0.4 | 
-| 5.7  | 0.2 | 0.3 | 0.4 |
-| 5.8  | 0.2 | 0.3 | 0.4 | 
-| 5.9  | 0.2 | 0.3 | 0.4 | 
-| 6.0  | 0.2 | 0.3 | 0.4 | 
-| 6.1  | 0.2 | 0.3 | 0.4 |
-| 6.2  | 0.2 | 0.3 | 0.4 | 
-| 6.3  | 0.2 | 0.3 | 0.4 | 
-| 6.4  | 0.2 | 0.3 | 0.4 | 
-| 6.5  | 0.2 | 0.3 | 0.4 |
-| 6.7  | 0.2 | 0.3 | 0.4 | 
-| 6.8  | 0.2 | 0.3 | 0.4 | 
-| 6.9  | 0.2 | 0.3 | 0.4 | 
-| 7.0  | 0.2 | 0.3 | 0.4 |
-| 7.1  | 0.2 | 0.3 | 0.4 | 
-| 7.2  | 0.2 | 0.3 | 0.4 | 
-| 7.3  | 0.2 | 0.3 | 0.4 | 
-| 7.4  | 0.2 | 0.3 | 0.4 |
-| 7.5  | 0.2 | 0.3 | 0.4 | 
-| 7.6  | 0.2 | 0.3 | 0.4 | 
-| 7.7  | 0.2 | 0.3 | 0.4 | 
-| 7.8  | 0.2 | 0.3 | 0.4 |
-| 7.9  | 0.2 | 0.3 | 0.4 | 
-| 8.0  | 0.2 | 0.3 | 0.4 | 
-| 8.1  | 0.2 | 0.3 | 0.4 | 
-| 8.2  | 0.2 | 0.3 | 0.4 |
-| 8.3  | 0.2 | 0.3 | 0.4 | 
-| 8.4  | 0.2 | 0.3 | 0.4 | 
-| 8.5  | 0.2 | 0.3 | 0.4 | 
-| 8.6  | 0.2 | 0.3 | 0.4 |
-| 8.7  | 0.2 | 0.3 | 0.4 | 
-| 8.8  | 0.2 | 0.3 | 0.4 | 
-| 8.9  | 0.2 | 0.3 | 0.4 | 
-| 9.0  | 0.2 | 0.3 | 0.4 |
-| 9.1  | 0.2 | 0.3 | 0.4 | 
-| 9.2  | 0.2 | 0.3 | 0.4 | 
-| 9.3  | 0.2 | 0.3 | 0.4 | 
-| 9.4  | 0.2 | 0.3 | 0.4 |
-| 9.5  | 0.2 | 0.3 | 0.4 | 
-| 9.6  | 0.2 | 0.3 | 0.4 | 
-| 9.7  | 0.2 | 0.3 | 0.4 | 
-| 9.8  | 0.2 | 0.3 | 0.4 |
-| 9.9  | 0.2 | 0.3 | 0.4 | 
-| 10.0  | 0.2 | 0.3 | 0.4 | 
+| 0.1  | N/A | N/A |N/A|
+| 0.2  | 0.9301916447 | N/A | N/A | 
+| 0.3  | N/A | N/A | N/A | 
+| 0.4  |1.110755144      |N/A | N/A | 
+| 0.5  | N/A |0.7628343855     | 0.4 |
+| 0.6  |0.1902264458     |N/A | N/A | 
+| 0.7  | N/A | N/A| N/A | 
+| 0.8  | -1.129693114 |N/A | N/A | 
+| 0.9  | N/A |N/A |N/A |
+| 1.0  | -1.58171699  |-1.616611002 | -3.175159955 | 
+ 
+
+
+Complete result value can be found at n=0.2rk4.txt, n=0.5rk4.txt and n=1.0rk4.txt
+
+
+
+
+***part three : Written Questions***
+
+1- What is the effect of the ks and kd parameters on the jello?
+
+Ks that is elastic constant is related to increasing and decreasing of sinus domain of spring moving. ks is constant and its value will ultimately scale the force and it shows if the spring is highly elastic or quite rigid?
+
+Figure 6 will compare the greater value of ks with smaller value. domain of greater ks is bigger than smaller ks.
+
+
+Figure6 smaller ks
+![](images/6.png)
+
+Figure7 greater ks
+![](images/7.png)
+
+Kd is damping constant which it's responsibility in spring force is to absorb some of the energy and tend to decrease the velocity of the mass points attached to them. So damping depends on the velocity.
+
+Figure 8 and 9 will shows the effec of smaller and greater value of Kd on the spring force.
+
+Figure 8 smaller Kd
+![](images/8.png)
+
+Figure9 greater Kd
+![](images/9.png)
+
+
+
+2- What are the benefits and the drawbacks of the collision system used here? What are some different ways in which it could be improved?
+
+the collision here shows the effects of spring forces on the jello cube and practical example of Newton's 3rd law. The best way to improve it, is to modifying the direction of retun=rn forces to be able to control the collision.
+
+3- What are some example systems you could model with mass-srping simulation? Explain how would you contruct the model.
 
 
 
@@ -323,13 +272,6 @@ Table 2 will show result value for RK4 with different step sizes.
 
 
 
-
-
-| undeformed jello  | deformed jello |
-
-| ------------- | ------------- |
-
-| ![](images/undeformed3.png?raw=true)  | ![](images/deformed3.png?raw=true) |
 
 
 
