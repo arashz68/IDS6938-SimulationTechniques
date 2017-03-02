@@ -236,6 +236,38 @@ Complete result value can be found at n=0.2rk4.txt, n=0.5rk4.txt and n=1.0rk4.tx
 
 ***Part Two: Programming a Jello Cube***
 
+Jelo cube programming is containing implement of base code which was given us by the instructor. c++ is a Proggraming language that we use for this simulation. 
+
+
+First of all, The sprong forces and constants was choosen due to different needs and depend on shear, structural and bend springs. speings responsibilities was to control the collision and contact of Jello Cube with the floor.
+
+Mathematical model of Jello Cube will be solved with the numerical methods and specifically RK4.
+
+After that contact and collision intersections was implemented to control the Jello and floor.
+
+Few cylinders added to the floor in order to shows the collision better.
+
+
+figures below shows part of workspace sceershot for spring forces added, collision, contact and floor intersection code implements. 
+
+
+![](images/10.png)
+
+
+![](images/11.png)
+
+
+![](images/12.png)
+
+
+![](images/13.png)
+
+
+![](images/14.png)
+
+
+![](images/15.png)
+
 
 
 
@@ -343,7 +375,7 @@ Yes. Numerical analysis of integration (RK4).
    
    ***P.hD. Student of Mechanical Engineering***
    
-   *** Master of science student in Modeling and Simulation***
+   ***Master of science student in Modeling and Simulation***
    
    ***University of Central Florida***
    
