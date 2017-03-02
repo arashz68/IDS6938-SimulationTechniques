@@ -190,6 +190,15 @@ Table one shows the five first result value from different solution methods and 
 
 Table 2 will show result value for RK4 with different step sizes.
 
+ [Complete Rerult Value for h=0.2RK4](n=0.2rk4.txt)
+
+
+[Complete Rerult Value for h=0.5RK4](n=0.5rk4.txt)
+
+
+
+[Complete Rerult Value for h=1.0RK4](n=1.0rk4.txt)
+
 
 
 
@@ -214,6 +223,40 @@ Complete result value can be found at n=0.2rk4.txt, n=0.5rk4.txt and n=1.0rk4.tx
 
 
 
+
+
+***Part Two: Programming a Jello Cube***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ***part three : Written Questions***
 
 1- What is the effect of the ks and kd parameters on the jello?
@@ -224,9 +267,11 @@ Figure 6 will compare the greater value of ks with smaller value. domain of grea
 
 
 Figure6 smaller ks
+
 ![](images/6.png)
 
 Figure7 greater ks
+
 ![](images/7.png)
 
 Kd is damping constant which it's responsibility in spring force is to absorb some of the energy and tend to decrease the velocity of the mass points attached to them. So damping depends on the velocity.
@@ -234,9 +279,11 @@ Kd is damping constant which it's responsibility in spring force is to absorb so
 Figure 8 and 9 will shows the effec of smaller and greater value of Kd on the spring force.
 
 Figure 8 smaller Kd
+
 ![](images/8.png)
 
 Figure9 greater Kd
+
 ![](images/9.png)
 
 
@@ -246,6 +293,49 @@ Figure9 greater Kd
 the collision here shows the effects of spring forces on the jello cube and practical example of Newton's 3rd law. The best way to improve it, is to modifying the direction of retun=rn forces to be able to control the collision.
 
 3- What are some example systems you could model with mass-srping simulation? Explain how would you contruct the model.
+
+systems which countain a collision from another particle such az throwing out boxes from airplanes in order to complete rescue operations in no access locations. The facts which are important in this simulation would be such as forces boxes suffering in a time of ollision with the ground and how to avoid any damages to them.
+
+
+4- Dose the Jello behave realistically? What integration method did you choose to make the Jello stabel?
+
+Yes. Numerical analysis of integration (RK4).
+
+
+5- How would you model and simulate water (in term of a continous simulation?)
+
+   First of all, the problem should be modeled mathematically and solved with the numerical solutions to be able to simulate it.
+
+   Second of all, model should be simulate pysically. Physics laws should be able to model it.
+   
+   In a nutshell, the model which is water in this case can be simulate.
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   ***ARASH ZARMEHR***
+   ***P.hD. Student of Mechanical Engineering***
+   *** Master of science student in Modeling and Simulation***
+   ***University of Central Florida***
+   ***Assignment 1, Simulation Techniques***
+   ***Instructor: Dr.Joseph T. Kider Jr.***
+   *** Spring 2017***
+  
+
 
 
 
