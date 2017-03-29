@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\build\CMakeFiles\generate.stamp is up-to-date.
+  dice.cpp
+C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\dice.cpp(51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  DiceRoll.vcxproj -> C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\build\Debug\DiceRoll.exe

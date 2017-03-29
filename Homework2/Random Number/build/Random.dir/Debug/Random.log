@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\build\CMakeFiles\generate.stamp is up-to-date.
+  random.cpp
+C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\random.cpp(69): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Random.vcxproj -> C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\build\Debug\Random.exe

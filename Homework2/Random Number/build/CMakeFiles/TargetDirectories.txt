@@ -1,0 +1,5 @@
+C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/build/CMakeFiles/Random.dir
+C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/build/CMakeFiles/QuasiRandom-Sobolo.dir
+C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/build/CMakeFiles/DiceRoll.dir
+C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/Random Number/build/CMakeFiles/ZERO_CHECK.dir

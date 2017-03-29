@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\quasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\sobol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\sobol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Random Number\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ADE5AD44-7F9F-3EBB-AF10-93FDC0C3BAA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{916BDDB9-8617-322C-A0D2-96A04303C46E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
