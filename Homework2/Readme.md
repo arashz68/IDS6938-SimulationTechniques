@@ -555,7 +555,7 @@ Server Idle: 1 [0.925]
 * **(e)** This part will implement the simulation of this airline queue by Anylogic personal edition. Anylogic is a modeling and simulation software.
 
 
-![Figure 7](images\result.jpg) 
+![Figure 7](images/Result.png) 
 
 Link below can run the simulation with anylogic.
 
