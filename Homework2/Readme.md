@@ -102,10 +102,10 @@ mean: 49.99875
 stdev: 28.84313
 
 Figures 6 and 7 shows differences due to changing *N*. Figure 6 is for N=1000 and Figure 7 is for N=500.
-![Figure 6](images/6.png) 
+![Figure 6]() 
 
 
-![Figure 7](images/7.png) 
+![Figure 7](images/4.png) 
 
 
 [*Minimal Standard minstd_rand generator*](boook8.xlsx)
@@ -116,10 +116,10 @@ stdev: 29.23172
 
 
 Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 and Figure 9 is for N=500.
-![Figure 8](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator\1.jpg)  
+![Figure 8](images/3.png)  
 
 
-![Figure 9](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Minimal Standard minstd_rand generator\1.jpg) 
+![Figure 9](images/6.png) 
 
 
 
