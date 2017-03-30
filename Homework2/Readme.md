@@ -179,18 +179,7 @@ Markov:
 
 [markov_results](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\markov_results)
 
-
-
-
-* **(b) Simulate and analyze the results of Null State Game - 10pts:** What is the modal number of moves required by a single player to finish the game? We will be simulating the game two different ways. **(1) Markov Chain**: The game can be analyzed with a row vector, *v* with 101 components, representing the probabilities that the player is on each of the positions. V(0) is (1,0,0,...,0) since we know we start at square 0. v evolves by: <BR>![](images/prob.png?raw=true)<BR>
-
-For this part (1) use the *Markov project* in the Snake and Ladders starter code.<BR>
-
-**(2) Monte Carlo**: he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
-
-
-
-* **(c) Simulate and analyze the results of Snakes and Ladders -10pts:**  Construct a new transition matrix based on the table:
+Now will Simulate and analyze the results of Snakes and Ladders. Construct a new transition matrix based on the table:
 
 
 
@@ -217,6 +206,13 @@ Ladders From  | Ladders To | |  Snakes From  | Snakes To
 76|91| |92|75
 
 84|98| |99|70
+
+
+for this porpuse the new code will added to the last code to simulate the snakes and ladders. The changes should be made in the transition matrix like figure below.
+
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\snake and ladder.jpg)
+
 
 
 
