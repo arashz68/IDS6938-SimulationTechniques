@@ -151,7 +151,7 @@ Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 an
 * **(d)** This part is generating generate random numbers in two-dimensions for a unit square. Plot will shows the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.The test will done for Three different N numbers of 500,1000 and 2500.
 
 First 5 engines and single distribution:
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part1\Part D\5 engine\re.jpg) 
+![Figure 7](images/re.png) 
 
 Second 5 distribution and single engine:
 
