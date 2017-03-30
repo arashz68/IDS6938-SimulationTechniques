@@ -560,7 +560,7 @@ Server Idle: 1 [0.925]
 Link below can run the simulation with anylogic.
 
 
-[Anylogic Queue Simulation ](Homework2\Solution Files\Part 3\Airport Securitygate Queue)
+[Anylogic Queue Simulation ](Airport Securitygate Queue.alp)
 
 
 
