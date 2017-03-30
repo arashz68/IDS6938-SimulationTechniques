@@ -58,7 +58,7 @@ mean: 49.29835
 stdev: 29.02319
 
 Figure 3 shows the random number distribution for this engine with 1000 numbers generating between 1 to 100.
-![](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator\1.jpg) 
+![](IDS6938-SimulationTechniques/Homework2/images/8.png) 
 
 
 4- [*Ranlux 48 generator*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Ranlux 48 generator)
