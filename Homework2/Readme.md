@@ -102,7 +102,8 @@ mean: 49.99875
 stdev: 28.84313
 
 Figures 6 and 7 shows differences due to changing *N*. Figure 6 is for N=1000 and Figure 7 is for N=500.
-![Figure 6]() 
+
+![Figure 6](images/7.png) 
 
 
 ![Figure 7](images/4.png) 
