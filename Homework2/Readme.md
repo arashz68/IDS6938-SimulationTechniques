@@ -188,14 +188,15 @@ From state 0 it is equally probable of landing on squares 1-6. From state 1 t is
 
 
 DTMC:
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\DTMC\1.jpg)
+![Figure 7](images/dtmc.jpg)
 
 Markov:
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\1.jpg)
+![Figure 7](images/Markov.jpg)
 
 
-[markov_results](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\markov_results)
+All of the results for Markov and DTMC are avaiable in Solution Files.
+
 
 Now will Simulate and analyze the results of Snakes and Ladders. Construct a new transition matrix based on the table:
 
