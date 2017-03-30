@@ -1,6 +1,4 @@
-﻿  Building Custom Rule C:/Users/zamehr/Desktop/clone/IDS6938-SimulationTechniques/Homework2/queues/CMakeLists.txt
-  CMake does not need to re-run because C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\queues\build\CMakeFiles\generate.stamp is up-to-date.
-  main.cpp
+﻿  main.cpp
 c:\users\zamehr\desktop\clone\ids6938-simulationtechniques\homework2\queues\mm1_queue.h(154): warning C4129: '%': unrecognized character escape sequence
 c:\users\zamehr\desktop\clone\ids6938-simulationtechniques\homework2\queues\mm1_queue.h(101): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   mm1_queue.cpp

@@ -215,22 +215,7 @@ for this porpuse the new code will added to the last code to simulate the snakes
 
 
 
-
-
-
-
-
-Run the same simulation and analyze your results similar to part (b) for the proper game of *Snakes and Ladders* for both methods. How often are the snakes and ladders used, how do the probability of finishing change, etc? What is the maximum and expected amount of moves for the game? Use charts and graphs to illustrate these points.
-
-* **(d) Think - 0pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
-
-
-
-
-
-##Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
-
-
+##Part 3 - Discrete Event Simulation - Queue Simulation 
 
 This problem will look at queues and commonly used performance measures. For this problem we will look to design a simple airport security check. We will make the following assumptions: (1) there is only one airline - Southwest; (2) passengers' interarrival times are independent and identically distributed (IID) with an exponential distribution with mean 1 / lambda. The service times are also assumed to be IID and exponentially distributed random variables with mean 1 / mu.
 
@@ -240,11 +225,17 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 
 
 
-* **(a) - 4pts:** To start create the senario in the figure above in *main.cpp*. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. You will have to set up  the appropriate *MM1_Queue* objects to capture the functionality above.
+* **(a)** First of all will define boarding conditions. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. 
 
-* **(b) - 4pts:** You want to add a check that your process is within an error range *is_within_error_range(float)* where the error range will be 0.002. You also want to process the next event, and add an external arrival where marked.
 
-* **(c) - 3pts:** in *mm1_queue.cpp* : add code to caculate the expected results for: 
+![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\Queue 1.jpg)
+
+* **(b)** The error range will be 0.002.
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\queue3.jpg)
+
+
+* **(c)** Code to caculate the expected results for values below was added.
 
   *  expected_server_utilization 
 
@@ -256,9 +247,315 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 
   * expected waiting time
 
-  * expected response time 
+  * expected response time
 
-*  **(d) - 4pts:** Write code to call the functions to output and generate data from the airport senario. Plot and analyze the useful statistics/results in the program of your choice.  (Hint -  basically call  *.output();* on the MM1_Queue objects you create. Hint2 - two other use functions are *get_current_time()* and  *plot_results_output()* call intially on your intial MM1_Queue object.)  
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\queue2.jpg)
+ 
+
+*  **(d)** Result:
+
+
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0212766]
+Mean Waiting Time: -0 [0.00240867]
+Mean Queue Length: 0 [0.014452]
+Mean Number of Customers: 0 [0.12766]
+Server Utilization: 0 [0.113208]
+Server Idle: 1 [0.886792]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 0 Services: 0
+Within 90% CI? false
+Mean Response Time: inf [0.05]
+Mean Waiting Time: -nan(ind) [0]
+Mean Queue Length: -nan(ind) [0]
+Mean Number of Customers: -nan(ind) [0]
+Server Utilization: 0 [0]
+Server Idle: -nan(ind) [1]
+*********
+Arrivals: 1 Services: -1
+Within 90% CI? false
+Mean Response Time: -0 [0.0135135]
+Mean Waiting Time: -0 [0.00101351]
+Mean Queue Length: 0 [0.00608108]
+Mean Number of Customers: 0 [0.0810811]
+Server Utilization: 0 [0.075]
+Server Idle: 1 [0.925]
+*********
+
 
 * **(e) - 15pts:** Download the personal edition of **[Anylogic](http://www.anylogic.com/)**, read through the [documentation](http://www.anylogic.com/learn-simulation) as needed, and set up the same type of simulation discussed above.
 
