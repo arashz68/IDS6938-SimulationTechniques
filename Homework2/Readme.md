@@ -8,7 +8,7 @@
 
 [University of Central Florida](http://www.ist.ucf.edu/grad/)
 
-This is the framework for homework #2. 
+
 
 
 
@@ -35,10 +35,12 @@ For this purpose Chi-Square Test is done and results are Shown below.
 Five Different randon number generatorand their data which is used for this assignments are:
 
 1-  [Mersene Twister 19937 generator](Homework2\Solution Files\Part1\PartA\Mersene Twister 19937 generator)
+
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:0.526518169
 Mean: 49.36312
 Figure 1 shows the random number distribution for this engine with 1000 numbers generating between 1 to 100.
+
 ![1](images\1.png) 
 
 2- [Knuth-B generator](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Mersene Twister 19937 generator)
