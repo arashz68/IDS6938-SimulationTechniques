@@ -223,7 +223,7 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 * **(a)** First of all will define boarding conditions. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. 
 
 
-![q3](images/Queue 1.png)
+![q3](images/Queue1.png)
 
 * **(b)** The error range will be 0.002.
 
