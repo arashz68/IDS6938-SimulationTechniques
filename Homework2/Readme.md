@@ -228,11 +228,11 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 * **(a)** First of all will define boarding conditions. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. 
 
 
-![Figure 7](images\Queue 1.png?raw=true)
+![q3](images\Queue 1.png)
 
 * **(b)** The error range will be 0.002.
 
-![Figure 7](images\queue3.ong?raw=true)
+![queue1](images\queue3.png)
 
 
 * **(c)** Code to caculate the expected results for values below was added.
@@ -250,7 +250,7 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
   * expected response time
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\queue2.jpg)
+![queue](images\queue2.jpg)
  
 
 *  **(d)** Result:
