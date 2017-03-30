@@ -34,7 +34,7 @@ For this purpose Chi-Square Test is done and results are Shown below.
 
 Five Different randon number generatorand their data which is used for this assignments are:
 
-1-  [Mersene Twister 19937 generator](Book1.xlsx)
+1-  [Mersene Twister 19937 generator](Book2.xlsx)
 
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:0.526518169
@@ -43,7 +43,7 @@ Figure 1 shows the random number distribution for this engine with 1000 numbers 
 
 ![1](images/2.png) 
 
-2- [Knuth-B generator](Mersene Twister 19937 generator.xlsx)
+2- [Knuth-B generator](book1.xlsx)
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:0.128088823
 mean: 48.87267
@@ -54,7 +54,7 @@ Figure 2 shows the random number distribution for this engine with 1000 numbers 
 ![21](images/1.png) 
 
 
-3-  [*Minimal Standard minstd_rand generator*](Minimal Standard minstd_rand generator.xlsx)
+3-  [*Minimal Standard minstd_rand generator*](book3.xlsx)
 
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:-0.153931692
@@ -66,7 +66,7 @@ Figure 3 shows the random number distribution for this engine with 1000 numbers 
 ![3](images/3.png) 
 
 
-4- [*Ranlux 48 generator*](Ranlux 48 generator.xlsx)
+4- [*Ranlux 48 generator*](book5.xlsx)
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:0.878220159
 mean: 49.01093
@@ -76,7 +76,7 @@ stdev: 29.23106
 Figure 4 shows the random number distribution for this engine with 1000 numbers generating between 1 to 100.
 ![](images/5.png) 
 
-5-[* Quasi-Sobol Generator*](Quasi Random-Sobolo.xlsx)
+5-[* Quasi-Sobol Generator*](book4.xlsx)
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:1
 mean: 50.09043
