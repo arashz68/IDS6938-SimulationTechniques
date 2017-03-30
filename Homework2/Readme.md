@@ -34,7 +34,7 @@ For this purpose Chi-Square Test is done and results are Shown below.
 
 Five Different randon number generatorand their data which is used for this assignments are:
 
-1-  [Mersene Twister 19937 generator](Solution Files/Part1/Part A/Mersene Twister 19937 generator)
+1-  [Mersene Twister 19937 generator](Book1.xlsx)
 
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
 Chi-Square Test Result:0.526518169
