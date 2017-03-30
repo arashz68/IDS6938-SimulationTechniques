@@ -132,30 +132,19 @@ Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 an
 ![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Weilbull Dist\1.jpg) 
 * **(d)** This part is generating generate random numbers in two-dimensions for a unit square. Plot will shows the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.The test will done for Three different N numbers of 500,1000 and 2500.
 
+First 5 engines and single distribution:
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part1\Part D\5 engine\re.jpg) 
+
+Second 5 distribution and single engine:
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part1\Part D\5 distribution\1.jpg) 
+
+
+##Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) 
 
 
 
-* **(e)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different distributions. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines. (See [Random Numbers Webcourse page](https://webcourses.ucf.edu/courses/1246518/pages/random-numbers?module_item_id=10541423) for a rough idea what you should produce.)
-
-* **(f)- 4pts:** Repeat parts (d) and (e) with a unit circle.
-
-
-
-##Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
-
-
-
-We all love board games. A board game can be viewed mathematically as a Markov chain, where the probability of moving to the next position depends only on the position you are currently at and the chances provided by tossing a dice. For this part of the homework we will simulate the game "*Snakes and Ladders*" (This goes by other names: Chutes and Ladders, Moksha Patam but all essentially the same gameplay.)
-
-
-
-| Moksha Patam  | Snakes and Ladders |
-
-| ------------- | ------------- |
-
-| ![](images/snake1.jpg?raw=true)  | ![](images/snake2.jpg?raw=true) |
-
-
+A board game can be viewed mathematically as a Markov chain, where the probability of moving to the next position depends only on the position you are currently at and the chances provided by tossing a dice. For this part of the homework we will simulate the game "*Snakes and Ladders*" (This goes by other names: Chutes and Ladders, Moksha Patam but all essentially the same gameplay.)
 
 ##### Background
 
@@ -167,11 +156,29 @@ The game is **memoryless** - your progression to the next position is independen
 
 
 
-* **(a) Null State Game transition matrix - 10pts:** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like:
+* **(a) Null State Game transition matrix** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like:
 
 <BR>![](images/null.png?raw=true)<BR>
 
 From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
+
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Null\1.jpg) 
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Null\2.jpg) 
+
+
+
+DTMC:
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\DTMC\1.jpg)
+
+Markov:
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\1.jpg)
+
+
+[markov_results](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\markov_results)
+
 
 
 
