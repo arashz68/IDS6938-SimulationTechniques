@@ -181,9 +181,9 @@ The game is **memoryless** - your progression to the next position is independen
 From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Null\1.jpg) 
+![Figure 7](images/s1.jpg) 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Null\2.jpg) 
+![Figure 7](images/s2.jpg) 
 
 
 
