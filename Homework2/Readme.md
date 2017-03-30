@@ -41,7 +41,7 @@ Chi-Square Test Result:0.526518169
 Mean: 49.36312
 Figure 1 shows the random number distribution for this engine with 1000 numbers generating between 1 to 100.
 
-![1](images\1.png) 
+![10](images\2.png) 
 
 2- [Knuth-B generator](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Mersene Twister 19937 generator)
 The data for this random machine are shows in link above and also Chi-Square Test was done to show how uniform are these data. Chi-Square test was done by Excel.
@@ -49,7 +49,7 @@ Chi-Square Test Result:0.128088823
 mean: 48.87267
 stdev: 29.07666
 Figure 2 shows the random number distribution for this engine with 1000 numbers generating between 1 to 100.
-![2](images\2.png) 
+![20](images\1.png) 
 
 
 3-  [*Minimal Standard minstd_rand generator*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator)
