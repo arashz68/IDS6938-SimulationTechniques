@@ -129,19 +129,25 @@ Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 an
 
  
 1-uniform_real_distribution
+
 ![Figure 7](images/2.png) 
 
 2-normal_distribution
+
 ![Figure 7](images/10.png) 
 
 3-chi_squared_distribution
+
 ![Figure 7](images/8.png) 
 
 4-lognormal_distribution
+
 ![Figure 7](images/9.png)
 
 5-weibull_distribution
-![Figure 7](images/11.png) 
+
+![Figure 7](images/11.png)
+
 * **(d)** This part is generating generate random numbers in two-dimensions for a unit square. Plot will shows the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.The test will done for Three different N numbers of 500,1000 and 2500.
 
 First 5 engines and single distribution:
