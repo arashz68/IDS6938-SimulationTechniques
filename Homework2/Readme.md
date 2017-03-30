@@ -96,6 +96,7 @@ The results shows that the most uniform random number generator is 	Quasi- Sobol
 
 
 [*Quasi Random-Sobolo*](book7.xlsx)
+
 The results for this generation is:
 Chi-Square Test Result:1
 mean: 49.99875
@@ -127,15 +128,15 @@ Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 an
 * **(c)** This part will show results for psedu-random number with a fixed random engine of Mersene Twister 19937 generator, and then vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers.
  
 1-uniform_real_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Mersene Twister 19937 generator\1.jpg) 
+![Figure 7](images/2.png) 
 2-normal_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Normal Dist\1.jpg) 
+![Figure 7](images/10.png) 
 3-chi_squared_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Chi Squared Dist\1.jpg) 
+![Figure 7](images/8.png) 
 4-lognormal_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\longnormal\1.jpg) 
+![Figure 7](images/9.png) 
 5-weibull_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Weilbull Dist\1.jpg) 
+![Figure 7](images/11.png) 
 * **(d)** This part is generating generate random numbers in two-dimensions for a unit square. Plot will shows the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.The test will done for Three different N numbers of 500,1000 and 2500.
 
 First 5 engines and single distribution:
