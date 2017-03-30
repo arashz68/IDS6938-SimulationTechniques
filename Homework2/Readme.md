@@ -95,20 +95,20 @@ The results shows that the most uniform random number generator is 	Quasi- Sobol
 
 
 
-[*Quasi Random-Sobolo*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Quasi Random-Sobolo)
+[*Quasi Random-Sobolo*](book7.xlsx)
 The results for this generation is:
 Chi-Square Test Result:1
 mean: 49.99875
 stdev: 28.84313
 
 Figures 6 and 7 shows differences due to changing *N*. Figure 6 is for N=1000 and Figure 7 is for N=500.
-![Figure 6](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Quasi Random-Sobolo\1.jpg) 
+![Figure 6](images/6.png) 
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Quasi Random-Sobolo\1.jpg) 
+![Figure 7](images/7.png) 
 
 
-[*Minimal Standard minstd_rand generator*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator)
+[*Minimal Standard minstd_rand generator*](boook8.xlsx)
 The results for this generation is:
 Chi-Square Test Result:0.943965388
 mean: 48.26720
