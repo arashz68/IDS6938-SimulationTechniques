@@ -211,7 +211,7 @@ Ladders From  | Ladders To | |  Snakes From  | Snakes To
 for this porpuse the new code will added to the last code to simulate the snakes and ladders. The changes should be made in the transition matrix like figure below.
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\snake and ladder.jpg)
+![Figure 7](images\snake and ladder.jpg)
 
 
 
@@ -228,11 +228,11 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 * **(a)** First of all will define boarding conditions. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. 
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\Queue 1.jpg)
+![Figure 7](images\Queue 1.png?raw=true)
 
 * **(b)** The error range will be 0.002.
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\queue3.jpg)
+![Figure 7](images\queue3.ong?raw=true)
 
 
 * **(c)** Code to caculate the expected results for values below was added.
@@ -560,12 +560,12 @@ Server Idle: 1 [0.925]
 * **(e)** This part will implement the simulation of this airline queue by Anylogic personal edition. Anylogic is a modeling and simulation software.
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\result.jpg) 
+![Figure 7](images\result.jpg) 
 
 Link below can run the simulation with anylogic.
 
 
-[Anylogic Queue Simulation ](C:\Users\zamehr\Desktop\clone\hw2\Homework2\Solution Files\Part 3\Airport Securitygate Queue)
+[Anylogic Queue Simulation ](Homework2\Solution Files\Part 3\Airport Securitygate Queue)
 
 
 
