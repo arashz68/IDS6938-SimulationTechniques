@@ -206,7 +206,7 @@ Now will Simulate and analyze the results of Snakes and Ladders. Construct a new
 for this porpuse the new code will added to the last code to simulate the snakes and ladders. The changes should be made in the transition matrix like figure below.
 
 
-![Figure 7](images/snake and ladder.png)
+![Figure7](images/snake and ladder.png)
 
 
 
