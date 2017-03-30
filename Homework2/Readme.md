@@ -557,7 +557,18 @@ Server Idle: 1 [0.925]
 *********
 
 
-* **(e) - 15pts:** Download the personal edition of **[Anylogic](http://www.anylogic.com/)**, read through the [documentation](http://www.anylogic.com/learn-simulation) as needed, and set up the same type of simulation discussed above.
+* **(e)** This part will implement the simulation of this airline queue by Anylogic personal edition. Anylogic is a modeling and simulation software.
+
+
+![Figure 7](C:\Users\zamehr\Desktop\clone\hw2\Homework2\images\result.jpg) 
+
+Link below can run the simulation with anylogic.
+
+
+[Anylogic Queue Simulation ](C:\Users\zamehr\Desktop\clone\hw2\Homework2\Solution Files\Part 3\Airport Securitygate Queue)
+
+
+
 
 
 
