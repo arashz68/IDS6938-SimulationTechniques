@@ -206,7 +206,7 @@ Now will Simulate and analyze the results of Snakes and Ladders. Construct a new
 for this porpuse the new code will added to the last code to simulate the snakes and ladders. The changes should be made in the transition matrix like figure below.
 
 
-![Figure 7](images/snakeandladder.png)
+![Figure 7](images/sn.png)
 
 
 
@@ -555,12 +555,12 @@ Server Idle: 1 [0.925]
 * **(e)** This part will implement the simulation of this airline queue by Anylogic personal edition. Anylogic is a modeling and simulation software.
 
 
-![Figure 7](images\result.jpg) 
+![Figure 7](images/Result.png) 
 
 Link below can run the simulation with anylogic.
 
 
-[Anylogic Queue Simulation ](Homework2\Solution Files\Part 3\Airport Securitygate Queue)
+[Anylogic Queue Simulation ](Airport Securitygate Queue.alp)
 
 
 
