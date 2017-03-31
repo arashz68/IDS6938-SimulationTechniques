@@ -188,14 +188,17 @@ From state 0 it is equally probable of landing on squares 1-6. From state 1 t is
 
 
 DTMC:
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\DTMC\1.jpg)
+
+![Figure 7](images/dtmc.jpg)
+
 
 Markov:
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\1.jpg)
+![Figure 7](images/Markov.jpg)
 
 
-[markov_results](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part2\Markov\markov_results)
+All of the results for Markov and DTMC are avaiable in Solution Files.
+
 
 Now will Simulate and analyze the results of Snakes and Ladders. Construct a new transition matrix based on the table:
 
@@ -203,7 +206,7 @@ Now will Simulate and analyze the results of Snakes and Ladders. Construct a new
 for this porpuse the new code will added to the last code to simulate the snakes and ladders. The changes should be made in the transition matrix like figure below.
 
 
-![Figure 7](images\snake and ladder.jpg)
+![Figure 7](images/snakeandladder.png)
 
 
 
@@ -220,11 +223,11 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
 * **(a)** First of all will define boarding conditions. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. 
 
 
-![q3](images\Queue 1.png)
+![q3](images/Queue1.png)
 
 * **(b)** The error range will be 0.002.
 
-![queue1](images\queue3.png)
+![queue1](images/queue3.jpg)
 
 
 * **(c)** Code to caculate the expected results for values below was added.
@@ -242,7 +245,7 @@ When a passanger arrives they have to wait in a queue to present their ID and ti
   * expected response time
 
 
-![queue](images\queue2.jpg)
+![queue](images/queue2.png)
  
 
 *  **(d)** Result:
