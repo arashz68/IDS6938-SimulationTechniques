@@ -95,20 +95,22 @@ The results shows that the most uniform random number generator is 	Quasi- Sobol
 
 
 
-[*Quasi Random-Sobolo*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Quasi Random-Sobolo)
+[*Quasi Random-Sobolo*](book7.xlsx)
+
 The results for this generation is:
 Chi-Square Test Result:1
 mean: 49.99875
 stdev: 28.84313
 
 Figures 6 and 7 shows differences due to changing *N*. Figure 6 is for N=1000 and Figure 7 is for N=500.
-![Figure 6](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Quasi Random-Sobolo\1.jpg) 
+
+![Figure 6](images/7.png) 
 
 
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Quasi Random-Sobolo\1.jpg) 
+![Figure 7](images/4.png) 
 
 
-[*Minimal Standard minstd_rand generator*](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator)
+[*Minimal Standard minstd_rand generator*](boook8.xlsx)
 The results for this generation is:
 Chi-Square Test Result:0.943965388
 mean: 48.26720
@@ -116,29 +118,40 @@ stdev: 29.23172
 
 
 Figures 8 and 9 shows differences due to changing *N*. Figure 8 is for N=1000 and Figure 9 is for N=500.
-![Figure 8](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Minimal Standard minstd_rand generator\1.jpg)  
+![Figure 8](images/3.png)  
 
 
-![Figure 9](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part B\Minimal Standard minstd_rand generator\1.jpg) 
+![Figure 9](images/6.png) 
 
 
 
 * **(c)** This part will show results for psedu-random number with a fixed random engine of Mersene Twister 19937 generator, and then vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers.
+
  
 1-uniform_real_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part A\Mersene Twister 19937 generator\1.jpg) 
+
+![Figure 7](images/2.png) 
+
 2-normal_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Normal Dist\1.jpg) 
+
+![Figure 7](images/10.png) 
+
 3-chi_squared_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Chi Squared Dist\1.jpg) 
+
+![Figure 7](images/8.png) 
+
 4-lognormal_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\longnormal\1.jpg) 
+
+![Figure 7](images/9.png)
+
 5-weibull_distribution
-![Figure 7](C:\Users\zamehr\Desktop\clone\IDS6938-SimulationTechniques\Homework2\Solution Files\Part1\Part C\Weilbull Dist\1.jpg) 
+
+![Figure 7](images/11.png)
+
 * **(d)** This part is generating generate random numbers in two-dimensions for a unit square. Plot will shows the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.The test will done for Three different N numbers of 500,1000 and 2500.
 
 First 5 engines and single distribution:
-![Figure 7](C:\Users\zamehr\Desktop\clone\simtech\Homework2\Solution Files\Part1\Part D\5 engine\re.jpg) 
+![Figure 7](images/re.png) 
 
 Second 5 distribution and single engine:
 
