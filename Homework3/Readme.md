@@ -25,13 +25,13 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 
 Figure 1 will show the general shape of this simulation for the subway entrance hall.
-![Figure1](images/hall_drawing.png) 
+![Figure1](Images/hall_drawing.png) 
 
 After creating a simple model with one pedestrian source and one ticket checking center and sink source which is the place that passengers go to the train, the first step of modeling is done.
 
 Figure 2 will show the 2d simulating of pedestrian flow.
 
-![Figure2](images/subway.png)
+![Figure2](Images/Subway.png)
 
 Also available at link below in youtube.
 
@@ -41,9 +41,9 @@ Figure 3 will show the Density of flow simulation and Figure 4 will show 3D simu
 
 
 
-![Figure3](images/DensitySubway.png)
+![Figure3](Images/DensitySubway.png)
 
-![Figure4](images/3dsubway.png)
+![Figure4](Images/3dsubway.png)
 
 
 
