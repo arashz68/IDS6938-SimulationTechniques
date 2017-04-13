@@ -7,6 +7,10 @@ This is the framework for homework #3.
 
 The assignment is due: **Monday, April  24 at 11:59PM (EST)**
 
+
+
+***Arash Zarmehr***
+
 # Introduction
 The goal of this assignment is to enable the behavioral animation of vehicle-like walking agents. 
 

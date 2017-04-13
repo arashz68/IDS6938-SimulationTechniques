@@ -1,0 +1,55 @@
+﻿  Building Custom Rule C:/Users/zamehr/Desktop/Clone/hw3/Homework3/BehaviorSimFramework/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\build\CMakeFiles\generate.stamp is up-to-date.
+  Agent.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  AgentDisplay.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\AgentDisplay.cpp(242): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+  Behavior.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Behavior.cpp(59): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h(5224): note: see declaration of 'CWinApp::Enable3dControls'
+  BehaviorDoc.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  BehaviorView.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Camera.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Environment.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  MainFrm.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Panel.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Simulation.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  StdAfx.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Transformation.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Generating Code...
+  Flocking.vcxproj -> C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\build\Debug\Flocking.exe
