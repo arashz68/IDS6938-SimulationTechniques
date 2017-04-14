@@ -21,7 +21,9 @@ You will be expected to compose a *final report* which demonstrates your underst
 
 The goal of this part of the assigment is to simulate the pedestrain flow for various configurations. Pedestrian traffic simulation is an important, sometimes required, stage for certain construction projects such as shopping centers, airports, railway stations, or stadiums. hese analyses can be used by architects in the design stage, by facilities owners contemplating changes, by city planners to evaluate rush hours, or even by civil authorities to simulate evacuations or other emergencies.
 
-2.a. This part will use a Anylogic Software and it's example for the Subway Entrance example. It would create the appropriate boundaries and walls, and the display ther pedestrian density map, statistics, 2D and 3D animations.
+***2.a. Subway Entrance Pedestrian Flow Simulation***
+
+This part will use a Anylogic Software and it's example for the Subway Entrance example. It would create the appropriate boundaries and walls, and the display ther pedestrian density map, statistics, 2D and 3D animations.
 
 
 Figure 1 will show the general shape of this simulation for the subway entrance hall.
@@ -53,6 +55,61 @@ Please check links below:
 
 
 [3D Subway Pedestrian Flow Simulation](https://youtu.be/fjGbC23jfZY)
+
+STATS
+
+
+
+***2.b. Pedestrians Flow Simulation Through the Maze***
+
+
+This part will simulate the pedestrian flow through the choosen maze and PDM, STATS and animations will be done like part a.
+
+In Figure 6, Wall border of choosen maze is defined.
+
+![Figure6](images/mazewall.png)
+
+Then, simple model will be generated and the simple 2D will be run by Anylogic.
+The results are shown in the figure 7 & 8.
+
+![Figure7](images/simple model.png)
+
+![Figure8](images/Maze2d.png)
+
+Please check link below for simple model.
+[2D Maze Pedestrian Flow Simulation](https://youtu.be/DKk_B2gLhyA)
+
+
+Now, It is time to check the results for 3D simulation, check the pedestrian flow density and statics of traffic and intensity in the choosen area. All will show in the figures 9, 10, 11. 
+
+
+![Figure9](images/Maze3D.png)
+
+![Figure10](images/mazedensity.png)
+
+![Figure11](images/MazeStats.png)
+
+Please Check link belows for the videos of above results.
+
+[3D Maze Pedestrian Flow Simulation](https://youtu.be/eXPmBYsG_Y4)
+
+[Density of Maze Pedestrian Flow Simulation](https://youtu.be/JWrEdRiAazo)
+
+[Statics for Maze Pedestrian Flow Simulation](https://youtu.be/4COGMGPMu8M)
+
+Now it is tinme to vary parameters in the agents to give them different behaviors and show the pedestrians change how they navigate the maze.
+.
+.
+.
+.
+.
+
+
+
+***2.C. Model and Analyze a building in the University of Central Florida Campus***
+
+
+
 
 
 
