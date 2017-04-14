@@ -58,7 +58,7 @@ Please check links below:
 
 Figure below shows static analyze of the simulation for one area before ticket check and one after ticket checks that are shown in the figure.
 
-![Figure5](images/subwaystats.png)
+![Figure5](Images/subwaystats.png)
 
 Also link below show the simulation video. Please check it.
 
