@@ -72,14 +72,14 @@ This part will simulate the pedestrian flow through the choosen maze and PDM, ST
 
 In Figure 6, Wall border of choosen maze is defined.
 
-![Figure6](images/mazewall.png)
+![Figure6](Images/mazewall.png)
 
 Then, simple model will be generated and the simple 2D will be run by Anylogic.
 The results are shown in the figure 7 & 8.
 
-![Figure7](images/simple model.png)
+![Figure7](Images/simple model.png)
 
-![Figure8](images/Maze2d.png)
+![Figure8](Images/Maze2d.png)
 
 Please check link below for simple model.
 
@@ -89,11 +89,11 @@ Please check link below for simple model.
 Now, It is time to check the results for 3D simulation, check the pedestrian flow density and statics of traffic and intensity in the choosen area. All will show in the figures 9, 10, 11. 
 
 
-![Figure9](images/Maze3D.png)
+![Figure9](Images/Maze3D.png)
 
-![Figure10](images/mazedensity.png)
+![Figure10](Images/Mazedensity.png)
 
-![Figure11](images/MazeStats.png)
+![Figure11](Images/MazeStats.png)
 
 Please Check link belows for the videos of above results.
 
