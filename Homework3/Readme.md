@@ -56,8 +56,13 @@ Please check links below:
 
 [3D Subway Pedestrian Flow Simulation](https://youtu.be/fjGbC23jfZY)
 
-STATS
+Figure below shows static analyze of the simulation for one area before ticket check and one after ticket checks that are shown in the figure.
 
+![Figure5](images/subwaystats.png)
+
+Also link below show the simulation video. Please check it.
+
+[Stats Subway Pedestrian Flow Simulation](https://youtu.be/5_-EqiRQMe4)
 
 
 ***2.b. Pedestrians Flow Simulation Through the Maze***
@@ -77,6 +82,7 @@ The results are shown in the figure 7 & 8.
 ![Figure8](images/Maze2d.png)
 
 Please check link below for simple model.
+
 [2D Maze Pedestrian Flow Simulation](https://youtu.be/DKk_B2gLhyA)
 
 
