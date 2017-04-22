@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\src\conway.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\src\drawing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\src\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\src\conway.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zamehr\Desktop\Clone\hw3\Agent1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{35167575-B26F-3F53-B168-50BA3DA51D02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4F21C156-1831-3D89-803F-4B1BCAC6848F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

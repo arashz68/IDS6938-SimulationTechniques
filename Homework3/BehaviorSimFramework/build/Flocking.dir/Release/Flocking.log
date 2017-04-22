@@ -1,0 +1,23 @@
+﻿  Agent.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(336): error C3867: 'vec2::Length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(336): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(336): error C2661: 'atan2': no overloaded function takes 1 arguments
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(357): error C3867: 'vec2::Length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(357): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(357): error C2661: 'atan2': no overloaded function takes 1 arguments
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(380): error C3867: 'vec2::Length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(380): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(380): error C2661: 'atan2': no overloaded function takes 1 arguments
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(382): error C3867: 'vec2::SqrLength': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(382): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(402): error C3867: 'vec2::Length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(402): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(402): error C2661: 'atan2': no overloaded function takes 1 arguments
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(404): error C3867: 'vec2::SqrLength': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(404): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(424): error C3867: 'vec2::Length': non-standard syntax; use '&' to create a pointer to member
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(424): error C2296: '*': illegal, left operand has type 'float (__thiscall vec2::* )(void) const'
+C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(424): error C2661: 'atan2': no overloaded function takes 1 arguments

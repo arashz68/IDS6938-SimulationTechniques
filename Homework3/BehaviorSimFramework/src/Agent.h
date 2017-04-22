@@ -59,6 +59,8 @@ public:
 
 	//Initiate values for agent properties and other settings
 	static void InitValues();
+	void velocitycontrol();
+	void HeadingControl();
 	void SetVTheta(vec2& V);
 	void SetV0();
 	vec2 LocalToWorld(vec2& l);

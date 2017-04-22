@@ -6,6 +6,8 @@
 #include "Behavior.h"
 #include "Agent.h"
 
+
+
 #ifdef _DEBUG
 #undef THIS_FILE
 static char THIS_FILE[]=__FILE__;
@@ -227,31 +229,38 @@ void SIMAgent::InitValues()
 	SIMAgent::KNoise, SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood,
 	SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.
 	*********************************************/
-	Kv0 = 0.0;
-	Kp1 = 0.0;
+	Kv0 = 1.0;
+	Kp1 = 1.0;
 	Kv1 = 0.0;
-	KArrival = 0.0;
+	KArrival = 4.0;
 	KDeparture = 0.0;
-	KNoise = 0.0;
-	KWander = 0.0;
-	KAvoid = 0.0;
-	TAvoid = 0.0;
-	RNeighborhood = 0.0;
-	KSeparate = 0.0;
-	KAlign = 0.0;
-	KCohesion = 0.0;
+	KNoise = 0.10;
+	KWander = 0.20;
+	KAvoid = 0.50;
+	TAvoid = 0.60;
+	RNeighborhood = 0.50;
+	KSeparate = 0.30;
+	KAlign = 0.20;
+	KCohesion = 1.0;
 }
 
 /*
 *	You should apply the control rules given desired velocity vd and desired orientation thetad.
 */
-void SIMAgent::Control()
-{
+
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+	void SIMAgent::Control()
+	{
+		Truncate(vd, -SIMAgent::MaxVelocity, SIMAgent::MaxVelocity);
+		input[0] = SIMAgent::Mass * SIMAgent::Kv0 * (vd - state[2]);
+		Truncate(input[0], -SIMAgent::MaxForce, SIMAgent::MaxForce);
 
-}
+		double dangle = AngleDiff(state[1], thetad);
+		input[1] = SIMAgent::Inertia * (Kp1 * dangle - Kv1 * state[3]);
+		Truncate(input[1], -SIMAgent::MaxTorque, SIMAgent::MaxTorque);
+	}
 
 /*
 *	Compute derivative vector given input and state vectors
@@ -259,10 +268,15 @@ void SIMAgent::Control()
 */
 void SIMAgent::FindDeriv()
 {
+	
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+	deriv[0] = input[0] / Mass;
 
+	deriv[1] = input[1] / Inertia;
+	deriv[2] = state[2];
+	deriv[3] = state[3];
 }
 
 /*
@@ -275,6 +289,26 @@ void SIMAgent::UpdateState()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+	for (int i = 0; i < dimState; i++)
+	{
+		state[i] += deriv[i] * deltaT;
+	}
+	state[0] = 0.0;
+
+
+     auto  clamp (float state[1], float M_PI, float M_2PI ) restrict(amp);
+	
+	Truncate(state[2], -SIMAgent::MaxVelocity, SIMAgent::MaxVelocity);
+
+	vec2 GVelocity;
+	GVelocity[0] = state[2] * cos(state[1]);
+	GVelocity[1] = state[2] * sin(state[1]);
+	GPos += GVelocity;
+
+	Truncate(GPos[0], -1.0 * env->groundSize, env->groundSize);
+	Truncate(GPos[1], -1.0 * env->groundSize, env->groundSize);
+
+	Truncate(state[3], -SIMAgent::MaxAngVel, SIMAgent::MaxAngVel);
 
 }
 
@@ -291,9 +325,16 @@ vec2 SIMAgent::Seek()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	vec2 tmp = goal - GPos;
+	tmp.Normalize();
+	
+	float thetad_d = atan2 (tmp[1], tmp[0]);
+	float vd = SIMAgent::MaxVelocity;
+	
+	return vec2 (cos(thetad_d)* vd, sin(thetad_d));
+	
 
-	return tmp;
+
 }
 
 /*
@@ -309,9 +350,14 @@ vec2 SIMAgent::Flee()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	vec2 tmp = goal - GPos;
+	tmp.Normalize();
+	float thetad_d = atan2 (tmp[1], tmp[0]) + M_PI ;
 
-	return tmp;
+	vd = SIMAgent::MaxVelocity;
+
+	return vec2(cos(thetad_d)* vd, sin(thetad_d)*vd);
+
 }
 
 /*
@@ -328,9 +374,13 @@ vec2 SIMAgent::Arrival()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
-
-	return tmp;
+	vec2 tmp=goal-GPos;
+	tmp.Normalize();
+	float thetad_d = atan2(tmp[1], tmp[0]);
+	
+	vd = (sqrt ((tmp.Length() * tmp.Length() * sin(thetad_d) * sin(thetad_d))+ (tmp.Length()* tmp.Length() * cos(thetad_d) * cos(thetad_d)))) * KArrival;
+	
+	return vec2(cos(thetad_d)* vd, sin(thetad_d)*vd);
 }
 
 /*
@@ -347,9 +397,12 @@ vec2 SIMAgent::Departure()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	vec2 tmp = goal - GPos;
+	tmp.Normalize();
+	float thetad_d = atan2(tmp[1], tmp[0]) + M_PI;
 
-	return tmp;
+    vd = (sqrt((tmp.Length() * tmp.Length() * sin(thetad_d) * sin(thetad_d)) + (tmp.Length()* tmp.Length() * cos(thetad_d) * cos(thetad_d)))) * KDeparture;
+	return vec2(cos(thetad_d)* vd, sin(thetad_d)*vd);
 }
 
 /*
@@ -366,9 +419,12 @@ vec2 SIMAgent::Wander()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	vec2 tmp = vWander - v0;
+	tmp.Normalize();
+	float thetad = atan2(tmp[1], tmp[0]);
+	vd = SIMAgent::MaxVelocity;
 
-	return tmp;
+	return vec2(M_PI_2 * KNoise *cos(thetad)* vd * KWander, M_PI_2 * KNoise *sin(thetad)* vd * KWander);
 }
 
 /*
@@ -389,6 +445,12 @@ vec2 SIMAgent::Avoid()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	//if (env->obstacles[i][0] &  > 25) {
+				//	vd= new tmp(MaxVelocity,vd * cos (thetad);
+		//tmp steer = PVector.sub(desired, velocity);
+		//steer.limit(MaxForce);
+		//applyForce(steer);
+	//}
 	
 	return tmp;
 }
@@ -406,7 +468,9 @@ vec2 SIMAgent::Separation()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	vec2 tmp = goal - GPos;
+	
+
 
 	return tmp;
 }
