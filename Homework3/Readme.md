@@ -118,7 +118,7 @@ For this part, Callbourn Hall building which is the one of the old buildings in 
 
 Colbourn Hall, formerly known as the Humanities and Fine Arts building, first began construction in 1972. In addition to the departments of English, History, Modern Languages & Literatures, and Writing and Rhetoric, Colbourn Hall includes programs for Women’s Studies, Judaic Studies, Africana Studies, and Latin American, Caribbean and Latino Studies. It also houses the University Writing Center and Graduate Student Center. Named after former UCF President Trevor Colbourn, the building has remained a focal point of academic life since the university’s early years.
 
-![Figure13](Images/colbournhall5.png)
+![Figure13](Images/colbourn hall5.png)
 
 ![Figure14](Images/colbournhall3.png)
 
