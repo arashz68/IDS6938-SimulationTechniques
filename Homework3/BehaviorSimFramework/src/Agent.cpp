@@ -229,19 +229,19 @@ void SIMAgent::InitValues()
 	SIMAgent::KNoise, SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood,
 	SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.
 	*********************************************/
-	Kv0 = 1.0;
-	Kp1 = 1.0;
-	Kv1 = 0.0;
-	KArrival = 4.0;
-	KDeparture = 0.0;
-	KNoise = 0.10;
-	KWander = 0.20;
-	KAvoid = 0.50;
-	TAvoid = 0.60;
-	RNeighborhood = 0.50;
-	KSeparate = 0.30;
-	KAlign = 0.20;
-	KCohesion = 1.0;
+	Kv0 = 40.0;
+	Kp1 = 40.0;
+	Kv1 = 80.0;
+	KArrival = 0.03;
+	KDeparture = 15.0;
+	KNoise = 10.0;
+	KWander = 10.0;
+	KAvoid = 100.0;
+	TAvoid = 20.0;
+	RNeighborhood = 800.0;
+	KSeparate = 1000.0;
+	KAlign = 20.0;
+	KCohesion = 0.05;
 }
 
 /*
@@ -444,17 +444,29 @@ vec2 SIMAgent::Avoid()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
-	//if (env->obstacles[i][0] &  > 25) {
-				//	vd= new tmp(MaxVelocity,vd * cos (thetad);
-		//tmp steer = PVector.sub(desired, velocity);
-		//steer.limit(MaxForce);
-		//applyForce(steer);
-	//}
 	
-	return tmp;
-}
 
+	vec2 tmp =goal - GPos;
+	tmp.Normalize();
+	for (int i = 0; i < env->obstaclesNum; i++)
+	{
+		
+
+		SIMAgent::radius = env->obstacles[i][2];
+
+		if (env->obstacles[i][0] - env->obstacles[i][1]<  SIMAgent::radius)
+		{
+			float thetad = atan2(tmp[1], tmp[0]);
+			vd = SIMAgent::MaxVelocity;
+
+		}
+
+		return vec2(cos(thetad)* vd * KAvoid * TAvoid, sin(thetad)* vd * KAvoid * TAvoid);
+
+	}
+
+	
+}
 /*
 *	Separation behavior
 *  SIMAgent::agents[i] gives the pointer to the ith agent in the environment
@@ -468,12 +480,20 @@ vec2 SIMAgent::Separation()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp = goal - GPos;
-	
 
+	for (int i = 0; i < env->obstaclesNum; i++)
+	{
+		vec2 tmp = (goal - GPos) / ((goal-GPos).Length)* KSeparate;;
+		tmp.Normalize();
+		float thetad = atan2(tmp[1], tmp[0]);
 
-	return tmp;
+		vd = SIMAgent::MaxVelocity;
+
+		return vec2(cos(thetad)* vd * KSeparate, sin(thetad)* vd * KSeparate);
+	}
 }
+
+	
 
 /*
 *	Alignment behavior
