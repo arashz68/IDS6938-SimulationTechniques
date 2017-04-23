@@ -132,7 +132,7 @@ Figure 16 will show the plan of first floor which will be analyzing for tgis par
 ![Figure15](Images/colbourn hall 10.png)
 
 
-
+df
 
 
 
