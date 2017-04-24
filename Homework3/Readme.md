@@ -103,10 +103,20 @@ Please Check link belows for the videos of above results.
 
 [Statics for Maze Pedestrian Flow Simulation](https://youtu.be/4COGMGPMu8M)
 
-Now it is tinme to vary parameters in the agents to give them different behaviors and show the pedestrians change how they navigate the maze.
+Now it is time to vary parameters in the agents to give them different behaviors and show the pedestrians change how they navigate the maze.
+
+For this purpose, the wait time is assumed before pedestrian go outside of maze.
+
+
+.![Figure12](Images/mazebehav.png)
+
+Also please check link below for videos.
+
+
 .
-.
-.
+.[Maze Pedestrian Behave Flow Simulation](https://youtu.be/UST9O8mrTm0)
+
+[Density for Maze Pedestrian Behave Flow Simulation](https://youtu.be/30EBQFDX6wQ)
 .
 .
 
