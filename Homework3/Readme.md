@@ -128,21 +128,47 @@ For this part, Callbourn Hall building which is the one of the old buildings in 
 
 Colbourn Hall, formerly known as the Humanities and Fine Arts building, first began construction in 1972. In addition to the departments of English, History, Modern Languages & Literatures, and Writing and Rhetoric, Colbourn Hall includes programs for Women’s Studies, Judaic Studies, Africana Studies, and Latin American, Caribbean and Latino Studies. It also houses the University Writing Center and Graduate Student Center. Named after former UCF President Trevor Colbourn, the building has remained a focal point of academic life since the university’s early years.
 
-![Figure13](Images/ colbournhall5.png)
+![Figure13](Images/colbourn hall5.png)
 
-![Figure14](Images/ colbournhall3.png)
+![Figure14](Images/colbourn hall3.png)
 
-![Figure15](Images/ colbournhall6.png)
+![Figure15](Images/colbourn hall6.png)
 
 For this purpose, first floor of this building will be simulate with anylogic for daily office ruotine, specia; event, Emergency Evacuation and normal egrees. Also,some features of outside design such as entrance and etc. will be cosider to find out if the building is suitable for nowadays daily jobs or not.
 
 Figure 16 will show the plan of first floor which will be analyzing for tgis part.
 
 
-![Figure15](Images/ colbournhall 10.png)
+![Figure16](Images/colbourn hall 10.png)
 
 
-df
+***2.a.1.*** First Analysis is for daily office routine activities that contain few workshops, UCF Writing center visitors, Offices visitor, Graduate Student center offices.
 
 
+Lets start with the regular office hour. The senario would be the times that classrooms and different special rooms are closed and usw regular offices such as UCF writing center and others.
+
+
+![Figure16](Images/senario1.png)
+
+
+in the figure above the yello target lines are exit from building, green target lines are entrance to the building and red colors target lines are service desks at the offices.
+
+Now lets take a look at the video of this senario.
+
+[Colbourn Hall Regular office hour simualtion senario](https://youtu.be/2eSHqyVqX24)
+
+
+Another senario is emergency evacuation. For this purpose, Red target lines would be sources and green target lines would be exit.
+
+
+![Figure16](Images/senario2.png)
+
+
+
+[Colbourn Hall evacuation senario](https://youtu.be/G2frvA4UC5s)
+
+Also figure below shows the evacuation senario density picture which red parts shows the highes density and problem in those area during emergency exits.
+
+
+![Figure16](Images/senario3.png)
 
