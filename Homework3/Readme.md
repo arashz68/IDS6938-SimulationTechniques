@@ -16,6 +16,119 @@ The goal of this assignment is to enable the behavioral animation of vehicle-lik
 
 You will be expected to compose a *final report* which demonstrates your understanding on the material in each section of the assignment. Be visual! - Pictures say a thousand words so you do not have to. Show off your different configurations and really explore the assignment.
 
+### Part 1: Agent Behavior Simulation
+
+The goal of this assignment is to enable the steering behavioral animation of agents.
+
+We represent an agent as a two-dimensional disk with mass (m) and moment-of-inertia (I) that is capable of generating a force F along body x-axis with a torque about the z-axis. For this assignment assume that the agent only translates in the world x-y plane and rotates about the body z-axis.
+
+For the purpose of this part, some behaviors will be followed to make agent act like what player like. Such as flee, seak, obstacle avoidance and etc.
+
+![Figure](Images/agent1.png)
+
+***2.a. Basic code complement***
+
+First of all, this part will compute derivative vector given input and state vectors.
+
+Description of agent state vector and input vector:
+
+state[0] is the position of the agent in local body coordinates (almost useless in this project);
+state[1] is the orientation angle of the agent with respect to world (i.e. global) coordinates;
+state[2] is the velocity of the agent in local body coordinates.
+state[3] is the angular velocity of the agent in world coordinates.
+input[0] is the force in local body coordinates;
+input[1] is the torque in local body coordinates
+You will need to set deriv[0], deriv[1], deriv[2], deriv[3]. Compute derivative vector given input and state vectors. This function sets derive vector to appropriate values after being called.
+
+deriv[0] is the velocity of the agent in local body coordinates
+deriv[1] is the angular velocity of the agent in world coordinates
+deriv[2] is the force in local body coordinates divided by the mass.
+deriv[3] is the torque in local body coordinates divided by the inertia.
+You also must implement SIMAgent::InitValues(): Try to figure out appropriate values for control and behavior settings. You need to find out appropriate values for: SIMAgent::Kv0, SIMAgent::Kp1, SIMAgent::Kv1, SIMAgent::KArrival, SIMAgent::KDeparture, SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood, SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.
+
+![Figure1](Images/agent2.png) 
+
+![Figure1](Images/agent3.png) 
+
+![Figure1](Images/agent4.png) 
+
+![Figure1](Images/agent5.png) 
+
+
+
+Now after entering derivations codes, it is time to go through different behavior of the agents.
+
+
+1.seek behavior, whisch is defined as an attempts of an agent to steer towards a specified target.
+for this porpuse desired velocity and desired orientation are added to the codes.
+
+
+![Figure1](Images/agent7.png)
+
+
+![Figure1](Images/agent6.png)
+
+2.Flee behavior, whisch is defined as an attempts of an agent to steer away from a specified target.
+
+The only diffference between seek and flee is Pi radian different in angle because flee is opposite in direction of the seek.
+
+
+3.Arrival and departure behavior, which is defined as an attempts of the agent to steer towards a specified target and slows down when it gets close.
+
+
+![Figure1](Images/agent8.png)
+
+arrival and departure behaviors are such as seek and flee. They are opposite in the directions.
+
+
+
+![Figure1](Images/agent9.png)
+
+
+
+and also departure:
+
+
+![Figure1](Images/agent10.png)
+
+
+
+The other behaviors will show bleow by different figures.
+
+Seek
+Flee
+Arrival
+Departure
+Wander
+
+![Figure1](Images/agent12.png)
+
+Obstacle Avoidance
+
+![Figure1](Images/agent13.png)
+
+Seperation, Cohesion, Alignment, Flocking, Leader Following
+
+![Figure1](Images/agent14.png)
+
+
+
+The figure of what they act:
+
+
+![Figure1](Images/agent11.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Part 2: Simulating a simple pedestrian flow
 
@@ -128,11 +241,11 @@ For this part, Callbourn Hall building which is the one of the old buildings in 
 
 Colbourn Hall, formerly known as the Humanities and Fine Arts building, first began construction in 1972. In addition to the departments of English, History, Modern Languages & Literatures, and Writing and Rhetoric, Colbourn Hall includes programs for Women’s Studies, Judaic Studies, Africana Studies, and Latin American, Caribbean and Latino Studies. It also houses the University Writing Center and Graduate Student Center. Named after former UCF President Trevor Colbourn, the building has remained a focal point of academic life since the university’s early years.
 
-![Figure13](Images/colbourn hall 5.png)
+![Figure13](Images/hall1.png)
 
-![Figure14](Images/colbourn hall 3.png)
+![Figure14](Images/hall2.png)
 
-![Figure15](Images/colbourn hall 6.png)
+![Figure15](Images/hall3.png)
 
 For this purpose, first floor of this building will be simulate with anylogic for daily office ruotine, specia; event, Emergency Evacuation and normal egrees. Also,some features of outside design such as entrance and etc. will be cosider to find out if the building is suitable for nowadays daily jobs or not.
 

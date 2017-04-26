@@ -2,8 +2,6 @@
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(486): error C2679: binary '/': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
-  c:\users\zamehr\desktop\clone\hw3\homework3\behaviorsimframework\src\Transformation.h(226): note: could be 'mat3 operator /(const mat3 &,const float)'
-  c:\users\zamehr\desktop\clone\hw3\homework3\behaviorsimframework\src\Transformation.h(161): note: or       'vec3 operator /(const vec3 &,const float)'
-  c:\users\zamehr\desktop\clone\hw3\homework3\behaviorsimframework\src\Transformation.h(112): note: or       'vec2 operator /(const vec2 &,const float)'
-  C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\src\Agent.cpp(486): note: while trying to match the argument list '(vec2, overloaded-function)'
+c:\users\zamehr\desktop\clone\hw3\homework3\behaviorsimframework\src\agent.cpp(469): warning C4715: 'SIMAgent::Avoid': not all control paths return a value
+c:\users\zamehr\desktop\clone\hw3\homework3\behaviorsimframework\src\agent.cpp(494): warning C4715: 'SIMAgent::Separation': not all control paths return a value
+  Flocking.vcxproj -> C:\Users\zamehr\Desktop\Clone\hw3\Homework3\BehaviorSimFramework\build\Release\Flocking.exe

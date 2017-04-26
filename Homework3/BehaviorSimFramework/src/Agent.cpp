@@ -483,13 +483,13 @@ vec2 SIMAgent::Separation()
 
 	for (int i = 0; i < env->obstaclesNum; i++)
 	{
-		vec2 tmp = (goal - GPos) / ((goal-GPos).Length)* KSeparate;;
+		vec2 tmp = (goal - GPos); 
 		tmp.Normalize();
 		float thetad = atan2(tmp[1], tmp[0]);
 
 		vd = SIMAgent::MaxVelocity;
 
-		return vec2(cos(thetad)* vd * KSeparate, sin(thetad)* vd * KSeparate);
+		return vec2(cos(thetad)* vd * KSeparate * RNeighborhood, sin(thetad)* vd * KSeparate * RNeighborhood);
 	}
 }
 
